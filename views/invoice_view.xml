@@ -1,0 +1,16 @@
+<odoo>
+    <!-- Inherit the invoice form view to customize the invoice lines list/tree -->
+    <record id="view_invoice_tree_meter_reading_fixed" model="ir.ui.view">
+        <field name="name">account.move.tree.meter.reading.fixed</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <!-- Insert custom fields into the invoice line list (tree) view -->
+            <xpath expr="//field[@name='invoice_line_ids']/tree" position="inside">
+                <field name="previous_reading"/>
+                <field name="new_reading"/>
+                <field name="actual_usage" readonly="1"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
