@@ -9,7 +9,7 @@
             <xpath expr="//field[@name='invoice_line_ids']/tree" position="inside">
                 <field name="previous_reading"/>
                 <field name="new_reading"/>
-                <field name="actual_usage" readonly="1 "/>
+                <field name="actual_usage" readonly="1"/>
             </xpath>
         </field>
     </record>
