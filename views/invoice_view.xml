@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <!-- Insert custom fields into the invoice line list (tree) view -->
             <xpath expr="//field[@name='invoice_line_ids']/tree" position="inside">
-                <field name="previous_reading"/>
+                <field name="Previous_reading"/>
                 <field name="new_reading"/>
                 <field name="actual_usage" readonly="1"/>
             </xpath>
