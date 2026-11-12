@@ -6,6 +6,6 @@
     'data': [
         'views/invoice_view.xml',
     ],
-    'installable': True,
+    'Installable': True,
     'application': False,
 }
